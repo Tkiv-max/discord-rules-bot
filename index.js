@@ -29,10 +29,10 @@ client.on('messageCreate', async message => {
 
       const embed = new MessageEmbed()
         .setColor('#2bc0e2')
-        .setThumbnail('')
+        .setThumbnail('https://media.discordapp.net/attachments/1087801360461873216/1310100390855049357/OS_BLUE...png?ex=6745f7d1&is=6744a651&hm=8bc6ea4adadef0b6f90de86d23deb7b31c7de659fed7f6cb27b666f878f2bbdc&=&format=webp&quality=lossless&width=314&height=314')
         .setTitle('Old Souls RP')
         .setDescription('**جميع القوانين التابعه لسيرفر اولد سولز نرجوا منك إتباع جميع القوانين لكي لا يتم محاسبتك**')
-        .setImage('')
+        .setImage('https://media.discordapp.net/attachments/1087801360461873216/1310100347255263325/Old_souls_banner_png.png?ex=6745f7c7&is=6744a647&hm=f151460ef76d03a067f2505dd8b62b5ecb8feeba4a16ee1c827d1b2ed9cefb1c&=&format=webp&quality=lossless&width=1619&height=909')
         .setFooter({ text: 'Developer Department For Old Souls' })
         .setTimestamp();
 
