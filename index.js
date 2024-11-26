@@ -19,7 +19,7 @@ client.on('messageCreate', async message => {
         .addComponents(
           new MessageSelectMenu()
             .setCustomId('select')
-            .setPlaceholder('قائمة القوانين')
+            .setPlaceholder('يرجى الاختيار')
             .addOptions(rules.map(rule => ({
               label: rule.title,
               description: rule.id,
@@ -28,12 +28,12 @@ client.on('messageCreate', async message => {
         );
 
       const embed = new MessageEmbed()
-        .setColor('#f8ca3d')
-        .setThumbnail('')
-        .setTitle('قوانين السيرفر')
-        .setDescription('**الرجاء اختيار احد القوانين لقرائته من قائمة الاختيارات تحت**')
-        .setImage('')
-        .setFooter({ text: 'Rules Bot' })
+        .setColor('#2bc0e2')
+        .setThumbnail('https://images-ext-1.discordapp.net/external/gOAtmmNdVbNivCINrR4456FHrFrybNjQdgWjW_1T3XQ/%3Fsize%3D512/https/cdn.discordapp.com/icons/1102954233013215272/f2130546947ed5072fef66d386d95e9a.png?format=webp&quality=lossless&width=460&height=460')
+        .setTitle('Old Souls RP')
+        .setDescription('**جميع القوانين التابعه لسيرفر اولد سولز نرجوا منك إتباع جميع القوانين لكي لا يتم محاسبتك**')
+        .setImage('https://media.discordapp.net/attachments/1087801360461873216/1310100347255263325/Old_souls_banner_png.png?ex=6743fd87&is=6742ac07&hm=ad018fa4ab624529a3ecd2c6a376a8e31cb9a11f9dd0c7069bfc9254afc12cc9&=&format=webp&quality=lossless&width=494&height=278')
+        .setFooter({ text: 'Developer Department For Old Souls' })
         .setTimestamp();
 
       const sentMessage = await message.channel.send({ embeds: [embed], components: [row] });
@@ -52,7 +52,7 @@ client.on('interactionCreate', async (interaction) => {
       .setColor('#f8ca3d')
       .setTitle(rule.title)
       .setDescription(text)
-      .setFooter({ text: 'Rules Bot' })
+      .setFooter({ text: 'Developer Department For Old Souls' })
       .setTimestamp();
 
     await interaction.reply({ embeds: [ruleEmbed], ephemeral: true });
