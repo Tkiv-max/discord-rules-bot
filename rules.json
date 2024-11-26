@@ -40,3 +40,23 @@
     "description": "data/file8.txt"
   }
 ]
+    "id": "rule9",
+    "title": "test 3",
+    "description": "data/file9.txt"
+  },
+  {
+    "id": "rule10",
+    "title": "test 3",
+    "description": "data/file10.txt"
+  },
+  {
+    "id": "rule11",
+    "title": "test 3",
+    "description": "data/file11.txt"
+  },
+  {
+    "id": "rule12",
+    "title": "test 3",
+    "description": "data/file12.txt"
+  }
+]
